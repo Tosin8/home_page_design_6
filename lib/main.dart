@@ -57,10 +57,50 @@ class _MyCustomUiState extends State<MyCustomUi> {
                 Tab(
                   child: Text('Example'),
                   
-                )
+                ),
+                Tab(
+                  child: Text('Example'),
+                  
+                ),
+                Tab(
+                  child: Text('Example'),
+                  
+                ), 
+             
+              
               ],
-                },
-                 
+            )), 
+            body: TabBarView(
+              children:[
+                 mainCardWiget(context), 
+            mainCardWidget(context), 
+            mainCardWidgt(context), 
+              ], 
+            )    ), 
+            ); 
+}}
+
+Widget mainCardWidget(BuildContext context) {
+  return ListView(
+    physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
+    children: const [
+      cardWithInfoPage('assets/images/file_name.png', 'Example', context), 
+      cardWithInfoPage('assets/images/file_name.png', 'Example', context),
+      cardWithInfoPage('assets/images/file_name.png', 'Example', context),
+      cardWithInfoPage('assets/images/file_name.png', 'Example', context),
+      cardWithInfoPage('assets/images/file_name.png', 'Example', context),
+      cardWithInfoPage('assets/images/file_name.png', 'Example', context),
+      cardWithInfoPage('assets/images/file_name.png', 'Example', context),
+      cardWithInfoPage('assets/images/file_name.png', 'Example', context),
+      cardWithInfoPage('assets/images/file_name.png', 'Example', context),
+      cardWithInfoPage('assets/images/file_name.png', 'Example', context),
+      cardWithInfoPage('assets/images/file_name.png', 'Example', context),
+      cardWithInfoPage('assets/images/file_name.png', 'Example', context),
+      cardWithInfoPage('assets/images/file_name.png', 'Example', context),
+      
+    ],
+  )
+}                 
                  ))
               ],),
         ))
